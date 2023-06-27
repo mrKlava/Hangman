@@ -15,6 +15,10 @@
 */
 
 
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const now = new Date()
+
+
 // Functional ----------------------------------------------------------------------------------------------------------------------------------
 
 function getId(id) {
@@ -45,7 +49,7 @@ const loseWin = getId("loseWin");
 
 const questionAnswerArr = [
     {question: "Name of biggest river?", answer: "AMAZON"},
-    {question: "Current month?", answer: "APRIL"},
+    {question: "Current month?", answer: months[now.getMonth()].toUpperCase()},
     {question: "Chips with mustage?", answer: "PRINGLES"},
 ];
 
